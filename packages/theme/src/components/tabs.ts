@@ -39,7 +39,12 @@ function baseStyleTablist(props: Dict) {
   }
 }
 
-const baseStyleTabpanel = { p: 4 }
+const baseStyleTabpanel = {
+  p: 4,
+  _focus: {
+    boxShadow: "outline",
+  },
+}
 
 const baseStyle = (props: Dict) => ({
   root: baseStyleRoot(props),
